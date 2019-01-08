@@ -46,3 +46,13 @@ button{
   font-weight: bold;
   text-transform: uppercase;
 }
+
+p.notice {
+font-size:60%;
+display: block;
+margin-top: 50px;
+}
+
+.green{
+color: #81f797;
+}

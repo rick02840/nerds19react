@@ -33,6 +33,7 @@ class App extends Component {
           <header className="App-header">
           <Nerdy spinstate = {this.state.spin} nerdyclass = {this.state.nerdy}  />
           <button onClick={this.setspin}>Spin Control</button>
+          <p className="notice">This was built starting with <span className="green">github.com/facebook/create-react-app</span>.</p>
         </header>
       </div>
     );
