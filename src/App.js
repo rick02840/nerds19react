@@ -1,7 +1,11 @@
+// this is required for everything
 import React, { Component } from 'react';
-import logo from './lil-nerdy.png';
+// import some css
 import './App.css';
+// import the Nerdy component
+import Nerdy from './Nerdy.js';
 
+// App is the main component and the parent of all others
 class App extends Component {
 
   // this is where the App state is stored
@@ -40,21 +44,23 @@ class App extends Component {
   }
 }
 
-// this is a new component called Nerdy
-class Nerdy extends Component {
-  render() {
-    return (
-      <div className="Nerdy">
-      <img src={logo} id="App-logo" className={this.props.nerdyclass} alt="logo" />
-      { this.props.spinstate &&
-      <p>Lil' Nerdy is spinning.</p>
-      }
-      { !this.props.spinstate &&
-        <p>Lil' Nerdy no spin.</p>
-      }
-      </div>
-    );
-  }
-}
+// I could have had the Nerdy component here
+// but best practice is to have each component in its own file
+
+// class Nerdy extends Component {
+//   render() {
+//     return (
+//       <div className="Nerdy">
+//       <img src={logo} id="App-logo" className={this.props.nerdyclass} alt="logo" />
+//       { this.props.spinstate &&
+//       <p>Lil' Nerdy is spinning.</p>
+//       }
+//       { !this.props.spinstate &&
+//         <p>Lil' Nerdy no spin.</p>
+//       }
+//       </div>
+//     );
+//   }
+// }
 
 export default App;
