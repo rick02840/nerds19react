@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
           <header className="App-header">
-          <Nerdy spinstate = {this.state.spin} nerdyclass = {this.state.nerdy}  />
+          <Nerdy spinstate = {this.state.spin} nerdyclass = {this.state.nerdy}  nerdytext="Lil' Nerdy"/>
           <button onClick={this.setspin}>Spin Control</button>
           <p className="notice">This was built starting with <span className="green">github.com/facebook/create-react-app</span>.</p>
         </header>
@@ -44,20 +44,20 @@ class App extends Component {
   }
 }
 
-// I could have had the Nerdy component here
+// I could have had the Nerdy component here in this file
 // but best practice is to have each component in its own file
 
 // class Nerdy extends Component {
 //   render() {
 //     return (
 //       <div className="Nerdy">
-//       <img src={logo} id="App-logo" className={this.props.nerdyclass} alt="logo" />
-//       { this.props.spinstate &&
-//       <p>Lil' Nerdy is spinning.</p>
-//       }
-//       { !this.props.spinstate &&
-//         <p>Lil' Nerdy no spin.</p>
-//       }
+//         <img src={logo} id="App-logo" className={this.props.nerdyclass} alt="logo" />
+//         { this.props.spinstate &&
+//         <p>Lil' Nerdy is spinning.</p>
+//         }
+//         { !this.props.spinstate &&
+//           <p>Lil' Nerdy no spin.</p>
+//         }
 //       </div>
 //     );
 //   }

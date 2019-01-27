@@ -6,13 +6,13 @@ class Nerdy extends Component {
 render() {
     return (
     <div className="Nerdy">
-    <img src={logo} id="App-logo" className={this.props.nerdyclass} alt="logo" />
-    { this.props.spinstate &&
-    <p>Lil' Nerdy is spinning.</p>
-    }
-    { !this.props.spinstate &&
-        <p>Lil' Nerdy no spin.</p>
-    }
+        <img src={logo} id="App-logo" className={this.props.nerdyclass} alt={this.props.nerdytext} />
+        { this.props.spinstate &&
+        <p>Lil' Nerdy is spinning.</p>
+        }
+        { !this.props.spinstate &&
+            <p>Lil' Nerdy no spin.</p>
+        }
     </div>
     );
     }
